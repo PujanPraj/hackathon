@@ -9,22 +9,36 @@ import React from "react";
 import Destination from "@/app/_components/home/destination/Destination";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useEffect,useRef } from 'react';
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
-
 
 const Home = () => {
   const elementRef = useRef(null);
+  const featureRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
       elementRef.current,
       { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.5, ease: 'power3.out' }
+      { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" }
+    );
+    gsap.fromTo(
+      featureRef.current,
+      { opacity: 0, y: 100 }, // Starting state
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: featureRef.current,
+          start: "top 75%", // When the top of the element hits 75% from the top of the viewport
+          end: "bottom 25%", // When the bottom of the element hits 25% from the top of the viewport
+          scrub: 1, // Synchronize the animation with the scroll position
+          markers: true, // Show markers for debugging (can be removed in production)
+        },
+      }
     );
   }, []);
-
-
 
   return (
     <>
@@ -36,7 +50,10 @@ const Home = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>{" "}
         {/* Overlay with background color */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center" ref={elementRef}>
+        <div
+          className="absolute inset-0 flex flex-col items-center justify-center text-center"
+          ref={elementRef}
+        >
           <h1 className="text-white text-xl md:text-5xl mb-4 w-[50%] leading-normal">
             Ready to embark on your next adventure? Contact us today and let’s
             start planning your dream vacation!
@@ -54,7 +71,10 @@ const Home = () => {
         <Heading title="Our Facilities" />
 
         {/* card section */}
-        <div className="py-5 columns-1 space-y-8 md:columns-3 mt-7 " ref={elementRef}>
+        <div
+          className="py-5 columns-1 space-y-8 md:columns-3 mt-7 "
+          ref={featureRef}
+        >
           <Card
             icon={<FaBus />}
             title="Comfortable Bus Service"

@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 
-
 import {
   Form,
   FormControl,
@@ -83,12 +82,14 @@ const login = () => {
                     <Button type="submit" className="w-full">
                       Login
                     </Button>
-                    <Button
-                      type="submit"
-                      className="bg-green-400 text-black w-full"
-                    >
-                      Sigup
-                    </Button>
+                    <Link href={"/signup"}>
+                      <Button
+                        type="submit"
+                        className="bg-green-400 text-black w-full"
+                      >
+                        Signup
+                      </Button>
+                    </Link>
                   </div>
                   <button
                     type="button"
@@ -128,7 +129,12 @@ const login = () => {
           </div>
         </div>
 
-        <p className="text-center mt-5">Don't have account? <Link href={"/signup"} className="text-orange-500">Signup</Link></p>
+        <p className="text-center mt-5">
+          Don't have account?{" "}
+          <Link href={"/signup"} className="text-orange-500">
+            Signup
+          </Link>
+        </p>
       </section>
     </>
   );
