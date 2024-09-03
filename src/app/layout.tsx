@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Trisul Travel",
-  description: "Travel and Tousim website",
+
+  description: "Our travel and toursim website",
 };
 
 export default function RootLayout({

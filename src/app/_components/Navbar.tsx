@@ -58,6 +58,15 @@ const Navbar = () => {
           >
             Lodging
           </Link>
+
+          <Link
+            href="/booknow"
+            className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
+              pathname === "/booknow" ? "text-orange-500 font-bold" : ""
+            }`}
+          >
+            Book now
+          </Link>
         </div>
 
         <div className="hidden md:flex space-x-5">
@@ -88,6 +97,9 @@ const Navbar = () => {
                 </Link>
                 <Link href={"/lodging"}>
                   <SheetTitle>Lodging</SheetTitle>
+                </Link>
+                <Link href={"/booknow"}>
+                  <SheetTitle>Book now</SheetTitle>
                 </Link>
 
                 <br />
