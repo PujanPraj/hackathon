@@ -1,3 +1,4 @@
+"use client";
 import Card from "@/app/_components/home/card/Card";
 import Heading from "@/app/_components/home/heading/Heading";
 import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
@@ -8,11 +9,27 @@ import React from "react";
 import Destination from "@/app/_components/home/destination/Destination";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useEffect,useRef } from 'react';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 
 const Home = () => {
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      elementRef.current,
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5, ease: 'power3.out' }
+    );
+  }, []);
+
+
+
   return (
     <>
-      <div className="relative w-full h-[70vh]">
+      <div className="relative w-full h-[70vh] hero">
         <img
           src="/assets/carousel/caro1.png"
           className="w-full h-full object-cover"
@@ -20,7 +37,7 @@ const Home = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>{" "}
         {/* Overlay with background color */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center" ref={elementRef}>
           <h1 className="text-white text-xl md:text-5xl mb-4 w-[50%] leading-normal">
             Ready to embark on your next adventure? Contact us today and let’s
             start planning your dream vacation!

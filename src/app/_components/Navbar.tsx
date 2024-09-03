@@ -32,7 +32,7 @@ const Navbar = () => {
           />
         </a>
 
-        <div className="hidden md:flex space-x-5">
+        <div className="hidden md:flex space-x-10">
           <Link
             href="/"
             className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
@@ -44,10 +44,10 @@ const Navbar = () => {
           <Link
             href="/aboutUs"
             className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
-              pathname === "/about" ? "text-orange-500 font-bold" : ""
+              pathname === "/aboutUs" ? "text-orange-500 font-bold" : ""
             }`}
           >
-            About
+            About Us
           </Link>
 
           <Link
@@ -79,12 +79,12 @@ const Navbar = () => {
               <FaBars className="w-6 h-6" />
             </SheetTrigger>
             <SheetContent>
-              <SheetHeader>
+              <SheetHeader className="space-y-5">
                 <Link href={"/"}>
                   <SheetTitle>Home</SheetTitle>
                 </Link>
                 <Link href={"/about"}>
-                  <SheetTitle>About</SheetTitle>
+                  <SheetTitle>About Us</SheetTitle>
                 </Link>
                 <Link href={"/lodging"}>
                   <SheetTitle>Lodging</SheetTitle>
