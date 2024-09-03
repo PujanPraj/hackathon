@@ -6,17 +6,29 @@ const Navbar = () => {
   return (
     <section className="container py-4">
       <nav className="flex justify-between items-center">
-        <a href={"/"}>LOGO.</a>
+        <a href={"/"}>
+          <img src="/assets/logo/logo.png" className="w-32 h-14" alt="" />
+        </a>
 
         <div className="flex space-x-3">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/about"}>About</Link>
-          <Link href={"/contact"}>Services</Link>
+          <Link href={"/"} className="text-lg">
+            Home
+          </Link>
+          <Link href={"/about"} className="text-lg">
+            About
+          </Link>
+          <Link href={"/service"} className="text-lg">
+            Services
+          </Link>
         </div>
 
         <div className="flex space-x-5">
-          <Button>Contact Us</Button>
-          <Button>Sign in</Button>
+          <Link href={"/contact"}>
+            <Button>Contact Us</Button>
+          </Link>
+          <Link href={"/signin"}>
+            <Button>Sign in</Button>
+          </Link>
         </div>
       </nav>
     </section>
