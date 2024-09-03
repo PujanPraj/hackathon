@@ -1,5 +1,4 @@
 import Card from "@/app/_components/home/card/Card";
-import MyCarousel from "@/app/_components/home/carousel/Carousel";
 import Heading from "@/app/_components/home/heading/Heading";
 import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
 import { FaBus } from "react-icons/fa";
@@ -8,6 +7,7 @@ import { MdDiscount } from "react-icons/md";
 import React from "react";
 import Destination from "@/app/_components/home/destination/Destination";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -18,9 +18,18 @@ const Home = () => {
           className="w-full h-full object-cover"
           alt=""
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="text-white text-center text-3xl mb-4">Lorem30</h1>
-          <Button className="bg-orange-300 text-white">Click me</Button>
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>{" "}
+        {/* Overlay with background color */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <h1 className="text-white text-5xl mb-4 w-[50%] leading-normal">
+            Ready to embark on your next adventure? Contact us today and let’s
+            start planning your dream vacation!
+          </h1>
+          <Link href={"/contact"}>
+            <Button className="bg-orange-500 text-xl p-7 hover:bg-orange-400 text-white">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -38,7 +47,7 @@ const Home = () => {
           <Card
             title="Comfortable Seats"
             icon={<MdOutlineAirlineSeatReclineExtra />}
-            para="Our seats are designed with your comfort in mind. With ample legroom, reclining capabilities, and adjustable headrests, you'll be able to stretch out and relax in style. Whether you're traveling solo or with friends, our seats offer the perfect blend of comfort and space."
+            para="Our seats are designed with your comfort in mind. With ample legroom, reclining capabilities, and adjustable headrests, you'll be able to stretch out and relax in style. Our seats offer the perfect blend of comfort and space."
           />
           <Card
             title="Cheap Prices"

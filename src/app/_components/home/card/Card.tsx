@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ icon, para, title }) => {
   return (
-    <div className="flex flex-col items-center space-y-4">
+    <div className="relative flex flex-col items-center space-y-4 p-5 bg-white rounded-xl transition-shadow duration-500 hover:shadow-2xl">
       {/* Render the icon passed as a prop */}
       {icon && (
         <div className="h-16 w-16 text-orange-500">

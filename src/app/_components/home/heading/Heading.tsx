@@ -5,7 +5,9 @@ interface headingprops {
 }
 
 const Heading = ({ title }: headingprops) => {
-  return <h1 className="text-4xl text-center font-bold">{title}</h1>;
+  return (
+    <h1 className="text-4xl text-center font-bold text-gray-600">{title}</h1>
+  );
 };
 
 export default Heading;
