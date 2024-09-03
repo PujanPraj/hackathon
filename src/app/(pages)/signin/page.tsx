@@ -35,7 +35,7 @@ const login = () => {
   return (
     <>
       <section className="container">
-        <h1 className="text-[40px] text-center mb-5">Login</h1>
+        <h1 className="text-[40px] text-center mb-5 mt-10">Login</h1>
         <div className="flex justify-center items-center">
           <div className="wrapper w-2/3 flex gap-5">
             <div className="left w-1/2 relative">
