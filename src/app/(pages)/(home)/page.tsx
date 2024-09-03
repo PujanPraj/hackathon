@@ -54,7 +54,7 @@ const Home = () => {
         <Heading title="Our Facilities" />
 
         {/* card section */}
-        <div className="py-5 columns-1 space-y-8 md:columns-3 mt-7">
+        <div className="py-5 columns-1 space-y-8 md:columns-3 mt-7 " ref={elementRef}>
           <Card
             icon={<FaBus />}
             title="Comfortable Bus Service"
