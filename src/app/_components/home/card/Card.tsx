@@ -3,15 +3,22 @@ import React from "react";
 interface CardProps {
   icon: React.ReactElement; // The icon prop should be a React element
   para: string;
+  title: string;
 }
 
-const Card: React.FC<CardProps> = ({ icon, para }) => {
+const Card: React.FC<CardProps> = ({ icon, para, title }) => {
   return (
     <div className="flex flex-col items-center space-y-4">
       {/* Render the icon passed as a prop */}
-      <div className="h-10 w-10">{icon}</div>
+      {icon && (
+        <div className="h-16 w-16 text-orange-500">
+          {/* Increase the height and width */}
+          {React.cloneElement(icon, { className: "h-full w-full" })}
+        </div>
+      )}
+      <h3 className="text-xl font-bold text-orange-500">{title}</h3>
       {/* Render the paragraph text passed as a prop */}
-      <p className="text-center">{para}</p>
+      <p className="text-center w-[90%]">{para}</p>
     </div>
   );
 };
