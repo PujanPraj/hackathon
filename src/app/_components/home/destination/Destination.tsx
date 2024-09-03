@@ -14,7 +14,7 @@ const Destination = ({ img, para, href }: DestinationProps) => {
       passHref
       className="relative flex flex-col items-center cursor-pointer overflow-hidden group"
     >
-      <div className="relative w-full h-48">
+      <div className="relative w-full h-60">
         <img
           src={img}
           alt={para}

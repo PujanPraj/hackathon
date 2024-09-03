@@ -15,7 +15,7 @@ const page = () => {
             </h2>
             <p className="mt-2 text-center text-base text-gray-600">
               Already have an account? 
-              <Link href={"/signin"} className="text-orange-500">
+              <Link href={"/signin"} className="text-orange-500 ">
               Signin
               </Link>
             </p>

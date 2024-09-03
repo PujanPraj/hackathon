@@ -42,7 +42,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/aboutUs"
             className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
               pathname === "/about" ? "text-orange-500 font-bold" : ""
             }`}

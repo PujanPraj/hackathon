@@ -54,11 +54,13 @@ const Home = () => {
 
         {/* card section */}
         <div className="py-5 columns-1 md:columns-3 mt-7 space-y-4">
-          <Destination
-            href="/bhaktapur"
-            img="/assets/destination/bhaktapur.jpg"
-            para="Bhaktapur"
-          />
+          <div className="wrapper hover:scale-110 z-10 relative transition duration-500">
+            <Destination
+              href="/bhaktapur"
+              img="/assets/destination/bhaktapur.jpg"
+              para="Bhaktapur"
+            />
+          </div>
 
           <Destination
             href="/kathmandu"
