@@ -24,7 +24,7 @@ const Destination = ({ img, para, href }: DestinationProps) => {
           className="rounded"
         />
       </div>
-      <div className="absolute bottom-0 bg-red-300 w-full text-center p-2">
+      <div className="absolute bottom-0 bg-orange-300 w-full text-center p-2">
         <p className="text-white">{para}</p>
       </div>
     </Link>
