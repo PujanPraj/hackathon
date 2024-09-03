@@ -7,14 +7,25 @@ import { MdDiscount } from "react-icons/md";
 
 import React from "react";
 import Destination from "@/app/_components/home/destination/Destination";
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
     <>
-      <MyCarousel />
+      <div className="relative w-full h-[50vh]">
+        <img
+          src="/assets/carousel/caro1.png"
+          className="w-full h-full object-cover"
+          alt=""
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <h1 className="text-white text-center text-3xl mb-4">Lorem30</h1>
+          <Button className="bg-orange-300 text-white">Click me</Button>
+        </div>
+      </div>
 
       {/* Our facilities */}
-      <section className="container py-5">
+      <section className="container py-5 mt-5">
         <Heading title="Our Facilities" />
 
         {/* card section */}
@@ -51,27 +62,27 @@ const Home = () => {
 
           <Destination
             href="/kathmandu"
-            img="/assets/destination/bhaktapur.jpg"
+            img="/assets/destination/kathmandu.webp"
             para="Kathmandu"
           />
           <Destination
             href="/pokhara"
-            img="/assets/destination/bhaktapur.jpg"
+            img="/assets/destination/pokhara.webp"
             para="Pokhara"
           />
           <Destination
             href="/lalitpur"
-            img="/assets/destination/bhaktapur.jpg"
+            img="/assets/destination/lalitput.webp"
             para="Lalitpur"
           />
           <Destination
             href="/lumbini"
-            img="/assets/destination/bhaktapur.jpg"
+            img="/assets/destination/lumbini.jpg"
             para="Lumbini"
           />
           <Destination
             href="/chitwan"
-            img="/assets/destination/bhaktapur.jpg"
+            img="/assets/destination/chitwan.jpg"
             para="Chitwan"
           />
         </div>

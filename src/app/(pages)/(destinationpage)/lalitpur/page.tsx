@@ -23,6 +23,59 @@ const Lalitpur = () => {
 
         Daily life in Lalitpur is a harmonious blend of tradition and modernity, where ancient practices coexist with contemporary influences. The city’s rich cultural tapestry, combined with its historic architecture and vibrant community celebrations, makes Lalitpur a fascinating destination for those interested in exploring Nepal’s diverse cultural landscape."
       />
+
+      <section className="container py-7">
+        <div className="grid grid-cols-3 gap-3">
+          <div className="relative group">
+            <img
+              src="/assets/destination/lalitpur/1.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lalitpur/2.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lalitpur/3.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lalitpur/4.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lalitpur/5.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lalitpur/6.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

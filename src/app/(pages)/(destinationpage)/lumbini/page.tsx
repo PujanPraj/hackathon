@@ -27,6 +27,59 @@ const Lumbini = () => {
 
         Overall, Lumbini's unique culture is a blend of Buddhism, Hinduism, and local traditions, making it a fascinating destination for cultural enthusiasts and spiritual seekers alike."
       />
+
+      <section className="container py-7">
+        <div className="grid grid-cols-3 gap-3">
+          <div className="relative group">
+            <img
+              src="/assets/destination/lumbini/1.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lumbini/2.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lumbini/3.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lumbini/4.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lumbini/5.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/lumbini/6.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
