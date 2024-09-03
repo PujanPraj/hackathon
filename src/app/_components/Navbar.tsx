@@ -17,8 +17,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <section className="container py-4">
-      <nav className="flex justify-between items-center">
+    <section className="sticky p-4 top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <nav className="container flex justify-between items-center">
         <a href={"/"}>
           <img
             src="/assets/logo/logo.png"
@@ -50,21 +50,33 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            href="/service"
+            href="/thingstodo"
             className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
               pathname === "/service" ? "text-orange-500 font-bold" : ""
             }`}
           >
-            Services
+            Things to do
+          </Link>
+          <Link
+            href="/lodging"
+            className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
+              pathname === "/service" ? "text-orange-500 font-bold" : ""
+            }`}
+          >
+            Lodging
           </Link>
         </div>
 
         <div className="hidden md:flex space-x-5">
           <Link href={"/contact"}>
-            <Button>Contact Us</Button>
+            <Button className="bg-orange-500 hover:bg-orange-400">
+              Contact Us
+            </Button>
           </Link>
           <Link href={"/signin"}>
-            <Button>Sign in</Button>
+            <Button className="bg-orange-500 hover:bg-orange-400">
+              Sign in
+            </Button>
           </Link>
         </div>
 

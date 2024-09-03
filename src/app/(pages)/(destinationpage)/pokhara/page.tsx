@@ -17,6 +17,59 @@ const Pokhara = () => {
 
         Pokhara's vibrant Lakeside area is a cultural hub where visitors can experience a blend of Nepali and international influences. Cafes, restaurants, and shops offer a mix of traditional and modern lifestyles, reflecting the city's cosmopolitan yet laid-back character. Local markets and cultural events provide insight into the everyday life of the inhabitants, making Pokhara a captivating destination for those interested in exploring the intersection of natural beauty and cultural richness."
       />
+
+      <section className="container py-7">
+        <div className="grid grid-cols-3 gap-3">
+          <div className="relative group">
+            <img
+              src="/assets/destination/pokhara/1.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/pokhara/2.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/pokhara/3.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/pokhara/4.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/pokhara/5.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/pokhara/6.webp"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
