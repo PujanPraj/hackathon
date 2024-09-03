@@ -61,6 +61,59 @@ const Bhaktapur = () => {
               of ancient rituals, arts, and local customs makes Bhaktapur a
               vibrant repository of Nepalese culture and history."
       />
+
+      <section className="container py-7">
+        <div className="grid grid-cols-3 gap-3">
+          <div className="relative group">
+            <img
+              src="/assets/destination/bhaktapur/1.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/bhaktapur/2.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/bhaktapur/3.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/bhaktapur/4.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/bhaktapur/5.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/bhaktapur/6.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

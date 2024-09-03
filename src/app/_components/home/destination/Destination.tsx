@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
 
 interface DestinationProps {
@@ -13,19 +12,17 @@ const Destination = ({ img, para, href }: DestinationProps) => {
     <Link
       href={href}
       passHref
-      className="relative flex flex-col items-center cursor-pointer"
+      className="relative flex flex-col items-center cursor-pointer overflow-hidden group"
     >
       <div className="relative w-full h-48">
-        <Image
+        <img
           src={img}
           alt={para}
-          layout="fill"
-          objectFit="cover"
-          className="rounded"
+          className="rounded h-full w-full object-cover"
         />
       </div>
-      <div className="absolute bottom-0 bg-orange-300 w-full text-center p-2">
-        <p className="text-white">{para}</p>
+      <div className="absolute bottom-0 w-full h-10 bg-opacity-70 bg-orange-300 text-center p-2 transition-all duration-300 group-hover:h-full flex items-center justify-center">
+        <p className="text-white text-shadow">{para}</p>
       </div>
     </Link>
   );

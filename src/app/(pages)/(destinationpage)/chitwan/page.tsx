@@ -22,6 +22,59 @@ const Chitwan = () => {
       Festivals like 'Maghi' and 'Holi' are celebrated with enthusiasm, showcasing traditional music, dance, and vibrant local cuisine. Chitwan's cultural landscape is further enriched by its diverse ethnic composition, which includes influences from other communities and modern Nepalese culture.
       This blend of indigenous traditions, community festivals, and harmonious coexistence with nature creates a rich cultural experience, making Chitwan a captivating destination for those interested in exploring Nepal's cultural diversity."
       />
+
+      <section className="container py-7">
+        <div className="grid grid-cols-3 gap-3">
+          <div className="relative group">
+            <img
+              src="/assets/destination/chitwan/1.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/chitwan/2.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/chitwan/3.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/chitwan/4.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/chitwan/5.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+          <div className="relative group">
+            <img
+              src="/assets/destination/chitwan/6.jpg"
+              className="w-full h-80 object-cover transition-transform duration-100"
+              alt=""
+            />
+            <div className="absolute inset-0 bg-orange-100 opacity-0 group-hover:opacity-50 transition-opacity duration-100"></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
