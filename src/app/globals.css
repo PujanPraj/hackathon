@@ -91,3 +91,16 @@
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(255, 123, 0, 0.6);
 }
+
+/* 
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/fonts/Amithen.tff') format('woff2'),
+       url('/fonts/MyCustomFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+h1{
+  font-family:"amithen";
+  font-size: 100px;
+} */

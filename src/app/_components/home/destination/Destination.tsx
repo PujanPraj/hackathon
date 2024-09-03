@@ -20,6 +20,7 @@ const Destination = ({ img, para, href }: DestinationProps) => {
           src={img}
           alt={para}
           className="rounded object-cover transition-transform duration-300"
+        
         />
       </div>
       <div className="absolute bottom-0 w-full h-10 bg-opacity-70 bg-orange-300 text-center p-2 transition-all duration-300 group-hover:h-full flex items-center justify-center">

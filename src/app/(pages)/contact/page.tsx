@@ -131,12 +131,23 @@ const page = () => {
                           rows={5} // Adjust the number of rows as needed
                         />
                       </FormControl>
+                      <Button
+                      type="submit"
+                      className="bg-orange-600 hover:bg-orange-500 text-white py-5 w-full"
+                    >
+                      Sigup
+                    </Button>
                     </FormItem>
+                    
                   )}
                 />
+                   
               </form>
+              
             </Form>
+            
           </div>
+         
           <div className="left w-1/3 ml-10 mb-10">
             <div className="phone flex justify-center items-center gap-3 mb-5">
               <img

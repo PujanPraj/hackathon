@@ -12,7 +12,7 @@ import Link from "next/link";
 const Home = () => {
   return (
     <>
-      <div className="relative w-full h-[50vh]">
+      <div className="relative w-full h-[70vh]">
         <img
           src="/assets/carousel/caro1.png"
           className="w-full h-full object-cover"
@@ -62,14 +62,12 @@ const Home = () => {
         <Heading title="Our Destination" />
 
         {/* card section */}
-        <div className="py-5 columns-1 md:columns-3 mt-7 space-y-4">
-          <div className="wrapper hover:scale-110 z-10 relative transition duration-500">
-            <Destination
-              href="/bhaktapur"
-              img="/assets/destination/bhaktapur.jpg"
-              para="Bhaktapur"
-            />
-          </div>
+        <div className="py-5 columns-1 md:columns-3 mt-7 space-y-10 space-x-5">
+          <Destination
+            href="/bhaktapur"
+            img="/assets/destination/bhaktapur.jpg"
+            para="Bhaktapur"
+          />
 
           <Destination
             href="/kathmandu"
