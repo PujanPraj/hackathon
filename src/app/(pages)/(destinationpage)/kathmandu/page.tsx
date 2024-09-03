@@ -40,7 +40,7 @@ const Kathmandu = () => {
       />
 
       <section className="container py-7">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           <div className="relative group">
             <img
               src="/assets/destination/ktm/1.jpg"

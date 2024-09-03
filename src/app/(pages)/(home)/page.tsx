@@ -21,7 +21,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>{" "}
         {/* Overlay with background color */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-          <h1 className="text-white text-5xl mb-4 w-[50%] leading-normal">
+          <h1 className="text-white text-xl md:text-5xl mb-4 w-[50%] leading-normal">
             Ready to embark on your next adventure? Contact us today and let’s
             start planning your dream vacation!
           </h1>

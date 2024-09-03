@@ -49,18 +49,11 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
-            href="/thingstodo"
-            className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
-              pathname === "/service" ? "text-orange-500 font-bold" : ""
-            }`}
-          >
-            Things to do
-          </Link>
+
           <Link
             href="/lodging"
             className={`text-lg hover:text-orange-500 transition-colors duration-200 ${
-              pathname === "/service" ? "text-orange-500 font-bold" : ""
+              pathname === "/lodging" ? "text-orange-500 font-bold" : ""
             }`}
           >
             Lodging
@@ -93,8 +86,8 @@ const Navbar = () => {
                 <Link href={"/about"}>
                   <SheetTitle>About</SheetTitle>
                 </Link>
-                <Link href={"/services"}>
-                  <SheetTitle>Services</SheetTitle>
+                <Link href={"/lodging"}>
+                  <SheetTitle>Lodging</SheetTitle>
                 </Link>
 
                 <br />
