@@ -9,17 +9,19 @@ import {
 
 const MyCarousel = () => {
   return (
-    <Carousel>
+    <Carousel className="h-[60%]">
       <CarouselContent>
         <CarouselItem>
           <img
-            src="https://www.journeysinternational.com/wp-content/uploads/2019/05/bhaktapur-nepal.jpg"
+            src="/assets/carousel/caro1.png"
+            className="w-full h-[60%] bg-contain"
             alt=""
           />
         </CarouselItem>
         <CarouselItem>
           <img
-            src="https://image.tourismnpl.com/Landmark/Kathmandu_Durbar_Square_968.jpeg"
+            src="/assets/carousel/caro2.png"
+            className="w-full h-[60%] bg-contain"
             alt=""
           />
         </CarouselItem>
