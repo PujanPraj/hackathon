@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect,useRef } from 'react';
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 
 const Home = () => {
